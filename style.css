@@ -1,0 +1,660 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+    cursor: url(Recursos/ImagesExperiment/cursor.png), auto;
+}
+
+body{
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+
+button{
+    display: flex;
+    padding: 1.25rem 2.8125rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.375rem;
+    border: 2px solid var(--Main, #3DB8A5);
+    background: linear-gradient(195deg, rgba(158, 218, 209, 0.10) 11.27%, rgba(61, 179, 162, 0.10) 90.4%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(17.5px);
+}
+
+button:hover{
+    background-color: #6de7d5;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: black;
+}
+
+header.logo{
+    margin: 0;
+    position: relative;
+    align-items: center;
+    width: 30vw;
+    
+
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    padding-bottom: 25px;
+    margin-left: 36%;
+    margin-top: -3%;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+header a:hover{
+    color: #3DB8A5;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 95vh;
+    color: white;
+    background-image:url(./Recursos/Backgrounds/CastilloAincradFullColor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#hero h1{
+    color: #FFF;
+text-align: center;
+font-size: 4.6875rem;
+font-style: italic;
+font-weight: 760;
+line-height: 4.375rem; /* 93.333% */
+letter-spacing: 0.0625rem;
+text-transform: uppercase;
+padding-top: 12%;
+}
+
+.sub-titulo{
+    position: relative;
+    color: #080A0B;
+    text-align: center;
+    margin-top: -2%;
+    font-size: 1.875rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.125rem;
+    padding-top: 1%;
+}
+
+.linkstart{
+    color: #3DB8A5;
+    text-align: center;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    position: relative;
+    margin-top: 1%;
+}
+.sub-button{
+    color: #FFF;
+text-align: justify;
+font-size: 2rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.375rem; /* 68.75% */
+text-transform: uppercase;
+}
+/*-------------------------------------------------------*/
+
+/*-------------------------------------------------------*/
+
+#kazuto-kirigaya{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    background-size: cover;
+    background-position: center center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
+    )
+    ,url(./Recursos/Backgrounds/CastilloAincradBlack.jpg);
+    background-repeat: no-repeat;
+}
+
+#kazuto-kirigaya .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+.image-container1{
+    width: auto;
+    height: 100;
+    flex-shrink: 0;
+    height: 100px;
+    position: relative;
+    float: left;
+}
+
+
+/*------------------------------*/
+
+
+#apariencias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 95vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
+    )
+    ,url(./Recursos/Backgrounds/Piso32Lago.jpg);
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+#apariencias .container{
+    padding: 150px 0px;
+}
+
+.titulo-apariencias{
+    margin-top: 0;
+    font-style: italic;
+    font-size: 3.2em;
+}
+
+.button.apariencias{
+    text-align: center;
+}
+
+#apariencias p{
+    display: none;
+}
+
+#apariencias .carta{
+    background-position: top center;
+    background-size: cover;
+    padding: 100px;
+    padding: 100px 0px;
+    margin: 30px;
+    border-radius: 15px;
+    margin-top: 20px;
+    background-position: center center;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
+    )
+    ,url(./Recursos/Apariencias/KiritoBaseInitial.png);
+    background-repeat: no-repeat;
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
+    )
+    ,url(./Recursos/Apariencias/KiritoSAOEspNeg.jpg);
+    background-repeat: no-repeat;
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
+    )
+    ,url(./Recursos/Apariencias/KiritoAlfheim.png);
+    background-repeat: no-repeat;
+}
+
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
+    )
+    ,url(./Recursos/Apariencias/KiritoGGO.jpg);
+    background-repeat: no-repeat;
+}
+
+.carta:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
+    )
+    ,url(./Recursos/Apariencias/Kirito2doG_Alicization.png);
+    background-repeat: no-repeat;
+}
+
+/*----------------------------------------------------------------------*/
+
+#antecedentes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    )
+    ,url(./Recursos/Backgrounds/KxSGGo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+
+}
+
+#antecedenntes li{
+    margin: 12px 0px;
+    font-weight: bold;
+
+}
+
+#antecedentes .container p{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#antecedentes .container{
+    text-align: center;
+    padding: 200px 12px;
+    text-decoration: dashed;
+    float: left;
+    position: relative;
+}
+
+#antecedentes h3{
+    font-size: 60px;
+    font-style: italic;
+}
+
+
+
+
+footer{
+    background-color: black;
+}
+
+footer p{
+    margin: 0;
+    color: rgb(100,100,100);
+    align-items: end;
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+
+#stacks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 110vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    )
+    ,url(./Recursos/Backgrounds/ViewCastilloKxA.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.caja-padre{
+    width: 40%;
+    min-width: 590px;
+    position: relative;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+.contenedor{
+    width: 100%;
+    padding: 30px 30px 50px;
+    
+    border: 2px solid rgba(0,0,0,0.06);
+    border-radius: 10px;
+    box-shadow: 0 20px 30 px rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+
+}
+
+.contenedor *{
+    font-family: system-uy;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+h2{
+    margin-bottom: 50px;
+    letter-spacing: 0px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+
+}
+
+.skills:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.detalles{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.menu{
+    position: relative;
+    border: 1px solid cyan;
+    border-radius: 20px;
+}
+
+.menu div{
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: cyan;
+}
+
+/*animaciones--------------------------------------*/
+
+#mano-menu{
+    animation: mano-barra 2s forwards;
+}
+
+@keyframes mano-barra{
+    100%{
+        width: 100%;
+    }
+}
+
+#doble-menu{
+    animation: doble-barra 2s forwards;
+}
+
+@keyframes doble-barra{
+    100%{
+        width: 100%;
+    }
+}
+
+#cuchillo-menu{
+    animation: cuchillo-barra 2s forwards;
+}
+
+@keyframes cuchillo-barra{
+    100%{
+        width: 98%;
+    }
+}
+
+#evacion-menu{
+    animation: evacion-barra 2s forwards;
+}
+
+@keyframes evacion-barra{
+    100%{
+        width: 100%;
+    }
+}
+
+#curacion-menu{
+    animation: curacion-barra 2s forwards;
+}
+
+@keyframes curacion-barra{
+    100%{
+        width: 94%;
+    }
+}
+
+#buscar-menu{
+    animation: buscar-barra 2s forwards;
+}
+
+@keyframes buscar-barra{
+    100%{
+        width: 100%;
+    }
+}
+
+#rastreo-menu{
+    animation: rastreo-barra 2s forwards;
+}
+
+@keyframes rastreo-barra{
+    100%{
+        width: 96%;
+    }
+}
+
+#ocultarse-menu{
+    animation: ocultarse-barra 2s forwards;
+}
+
+@keyframes ocultarse-barra{
+    100%{
+        width: 100%;
+    }
+}
+
+#vision-menu{
+    animation: vision-barra 2s forwards;
+}
+
+@keyframes vision-barra{
+    100%{
+        width: 90%;
+    }
+}
+
+#peso-menu{
+    animation: peso-barra 2s forwards;
+}
+
+@keyframes peso-barra{
+    100%{
+        width: 95%;
+    }
+}
+
+#carrera-menu{
+    animation: carrera-barra 2s forwards;
+}
+
+@keyframes carrera-barra{
+    100%{
+        width: 87%;
+    }
+}
+
+/*logros--------------------------------------------------*/
+
+#logros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
+    )
+    ,url(./Recursos/Backgrounds/KxAFontMoon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#logros .container{
+    position: relative;
+    float: left;
+    width: 50vw;
+    margin-right: 40%;
+    margin-top: -32%;
+}
+
+#logros img{
+    height: 700px;
+    position: relative;
+    float: right;
+    margin-right: -50%;
+    margin-top: 8%;
+}
+
+#logros li{
+    text-decoration: none;
+}
+
+
+
+
+
+#frases{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
+    )
+    ,url(./Recursos/Backgrounds/FullGroupSAO.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.frases-img{
+    width: 50vw;
+    position: relative;
+    float: left;
+    margin-right: 50%;
+    margin-top: 7%;
+}
+
+#frases .container{
+    width: 50vw;
+    position: relative;
+    float: right;
+    margin-left: 40%;
+    margin-top: -30%;
+    
+}
+
+/*curiosidades--------------------------------------------*/
+
+#curiosidades{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.8),
+        rgba(0,0,0,0.8)
+    )
+    ,url(./Recursos/Backgrounds/AtardecerKxA_Espaldas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#curiosidades .container{
+    width: 50vw;
+    position: relative;
+    float: left;
+    margin-right: 40%;
+    margin-top: -30%;
+}
+
+.curiosidades-img{
+    width: 50vw;
+    position: relative;
+    float: right;
+    margin-left: 70%;
+    margin-top: 10%;
+}
